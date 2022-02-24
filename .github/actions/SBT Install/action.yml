@@ -1,0 +1,14 @@
+name: 'sbt install'
+description: 'sbt install'
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - uses: Jtalk/setup-sbt@v1
+        with:
+           version: 1.1.1
+      - name: version check
+        shell: bash
+        run: sbt -v 
+
