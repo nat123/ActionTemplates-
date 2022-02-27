@@ -7,7 +7,7 @@ runs:
         uses: actions/checkout@v2
       - uses: Jtalk/setup-sbt@v1
         with:
-           version: 1.1.1
+        sbt-version: ${{ inputs.sbt-version }}
       - name: version check
         shell: bash
         run: sbt -version
