@@ -1,5 +1,10 @@
 name: 'sbt install'
 description: 'sbt install'
+inputs:
+       sbt-version: 
+        description: 'The sbt version to use'
+        default: '1.1.1'
+        required: false
 runs:
   using: "composite"
   steps:
